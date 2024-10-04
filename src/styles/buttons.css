@@ -1,0 +1,144 @@
+.noble-gases-button {
+  left: 1050px;
+  background-color: rgb(184,154,155);
+}
+
+.nonmetals-button {
+  left: 1000px;
+  background-color: rgb(156,189,187);
+}
+
+.semimetals-button {
+  width: 40px;
+  height: 145px;
+  writing-mode: vertical-rl;
+  text-align: left;
+  left: 950px;
+  top: 150px;
+  background-color: rgb(193, 202, 172);
+}
+
+.transition-metals-button {
+  left: 850px;
+  background-color: rgb(209, 194, 153);
+}
+
+.postmetals-button {
+  left: 900px;
+  background-color: rgb(168, 160, 172);
+}
+
+.lantanoids-button {
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  left: 740px;
+  top: 175px;
+  background-color: rgb(217, 183, 161);
+}
+
+.actinoids-button {
+  width: 100px;
+  height: 55px;
+  text-align: center;
+  left: 740px;
+  top: 240px;
+  background-color: rgb(218, 202, 189);
+}
+
+.alkali-earth-metals-button {
+  left: 690px;
+  background-color: rgb(223, 185, 141);
+}
+
+.alkali-metals-button {
+  left: 640px;
+  background-color: rgb(216, 139, 139);
+}
+
+.nonmetals-category-button {
+  font-family: 'Monterrat', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 1000px;
+  top: 150px;
+  height: 27px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  border-bottom: none;
+  background-color: #f8ecdb;
+}
+
+.metals-category-button {
+  font-family: 'Monterrat', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 640px;
+  top: 150px;
+  width: 300px;
+  height: 27px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  border-bottom: none;
+  background-color: #f8ecdb;
+}
+
+.actinoids-button,
+.lantanoids-button,
+.alkali-earth-metals-button,
+.alkali-metals-button,
+.transition-metals-button,
+.postmetals-button,
+.noble-gases-button,
+.semimetals-button,
+.nonmetals-button {
+  font-family: 'Monterrat', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.alkali-earth-metals-button,
+.alkali-metals-button,
+.transition-metals-button,
+.postmetals-button,
+.noble-gases-button,
+.nonmetals-button {
+  width: 40px;
+  height: 120px;
+  writing-mode: vertical-rl;
+  text-align: left;
+  top: 175px;
+}
+
+.gases-button,
+.solid-button,
+.liquid-button,
+.NA-button {
+  font-family: 'Monterrat', sans-serif;
+  font-size: 14px;
+  position: absolute;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  left: 525px;
+  height: 27px;
+  width: 102px;
+  background-color: #f8ecdb;
+}
+
+.solid-button {
+  top: 150px;
+}
+
+.liquid-button {
+  top: 189px;
+}
+
+.gases-button {
+  top: 228px;
+}
+
+.NA-button {
+  top: 267px;
+}

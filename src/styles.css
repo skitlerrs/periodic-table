@@ -1,0 +1,263 @@
+.periodic-table-container {
+  background-image: url('../secondback.jpg');
+  margin-left: -10px;
+  margin-top: -20px;
+  padding-top: 10px;
+  width: 101.2%;
+  height: 100vh;
+  .header-text {
+    margin-left: 45px;
+    text-align: left;
+    font-family: 'Tahoma';
+    color: black;
+  }
+}
+
+
+.periodic-table {
+  background-image: url('../thirdback.jpg');
+  display: flex;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  width: 100.67%;
+  height: 93vh;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid rgb(113, 91, 62); 
+}
+
+.groups {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-number {
+  width: 50px;
+  font-family: 'Monterrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #797979;
+}
+
+.group6,
+.group7 {
+  position: absolute;
+  font-family: 'Monterrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #797979;
+}
+.group6 {
+  top: 635px;
+  left: 555px;
+}
+.group7 {
+  top: 697px;
+  left: 555px;
+}
+.period-number {
+  font-family: 'Monterrat', sans-serif;
+  font-size: 15px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #797979;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell {
+  width: 58px;
+  height: 58px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 12px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 8.5px;
+  text-align: left;
+  white-space: pre-wrap;
+
+  &.empty {
+    border: 1px solid transparent;
+    cursor: default;
+  }
+
+  &:hover:not(.empty) {
+    background-color: #f8ecdb;
+    font-weight: bold;
+    transform: scale(1.05);
+  }
+  .symbol {
+    font-size: 15px;
+    font-weight: bold 
+   }
+}
+
+
+.selected-element {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #dbbdeb;
+  border-radius: 5px;
+}
+
+h3,
+h4 {
+  margin-top: 0;
+}
+
+.left-panel {
+  background-image: url('../back.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 250px;
+  height: 605px;
+  padding: 10px;
+  
+  outline: 5px solid rgb(149, 120, 83);
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.right-part {
+  /* flex-grow: 1; */
+
+  background-image: url('../back.jpg');
+  background-size: cover;
+  background-position: center;
+  outline: 5px solid rgb(149, 120, 83);
+  width: 1095px;
+  height: 625px;
+  margin-left: 70px;
+  margin-right: 50px;
+  margin-top: 30px;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.nonmetal {
+  background-color: rgb(156,189,187); /* Зеленый цвет */
+}
+
+.noble-gases {
+  background-color: rgb(184,154,155); /* Оранжевый цвет */
+}
+
+.semimetals {
+  background-color: rgb(193, 202, 172); /* Синий цвет */
+}
+
+.postmetals {
+  background-color: rgb(168, 160, 172); /* Розовый цвет */
+}
+
+.transition-metals {
+  background-color: rgb(209, 194, 153); /* Розовый цвет */
+}
+
+.lantanoids {
+  background-color: rgb(217, 183, 161); /* Желтый цвет */
+}
+
+.actinoids {
+  background-color: rgb(218, 202, 189); /* Оранжевый цвет */
+}
+
+.alkali-earth-metals {
+  background-color: rgb(223, 185, 141); /* Красный цвет */
+}
+
+.alkali-metals {
+  background-color: rgb(216, 139, 139); /* Оранжевый цвет */
+}
+
+.none {
+  background-color: #caad84; 
+}
+
+.hide {
+  background-color: #f8ecdb;
+}
+
+.enlarged-cell {
+  width: 100px;
+  height: 100px;
+  /* outline: 10px solid #5c2d75; */
+  border: 2px solid #000;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 50px;
+  padding: 10px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.enlarged-cell .atomic-number {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.enlarged-cell .symbol {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.enlarged-cell .name {
+  font-size: 17px;
+}
+
+.period-9,
+.period-10 {
+  padding-left: 8px;
+}
+.cell span:nth-child(2),
+.cell .symbol,
+.cell .mass,
+.cell .name {
+  margin-left: 4px;
+}
+
+.infobox {
+  width: 240px;
+  font-family: 'Tahoma', sans-serif;
+}
+
+.highlightgases {
+  background-color: #672c2c;
+  color: #f8ecdb;
+}
+
+.highlightsolid {
+  background-color: #4f3d3d;
+  color: #f8ecdb;
+}
+
+.highlightliquid {
+  background-color: #283b80;
+  color: #f8ecdb;
+}
+
+.highlightNA {
+  background-color: #48583a;
+  color: #f8ecdb;
+}
+
+
