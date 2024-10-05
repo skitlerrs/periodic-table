@@ -36,3 +36,18 @@
 .modal-body {
   margin-top: 20px;
 }
+
+.modal-close-button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 65px;
+  right: 320px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+.modal-close-button:hover {
+  color: red; /* Изменение цвета при наведении */
+}

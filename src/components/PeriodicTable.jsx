@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { elements } from '../data/elements'; // Данные элементов
-import { categoriesInfo } from '../data/categories-info';
+import { categoriesInfo } from '../data/modal-info';
 import Modal from './Modal';
 import '../styles/buttons.css';
 
@@ -30,8 +30,8 @@ export const PeriodicTable = () => {
   const [highlightGases, setHighlightGases] = useState(false);
   const [highlightNA, setHighlightNA] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState('');
-  const [modalTitle, setModalTitle] = useState('');
+  // const [modalTitle, setModalTitle] = useState('');
+  const [modalLink, setModalLink] = useState('');
 
   useEffect(() => {
     setElementsData(elements);
@@ -94,14 +94,9 @@ export const PeriodicTable = () => {
   };
 
   const openModal = (category) => {
-    const { title, description } = categoriesInfo[category];
-    if (title && description) {
-        setModalTitle(title);
-        setModalContent(description);
-        setIsModalOpen(true);
-    } else {
-        console.error(`Категория '${category}' не найдена`);
-    }
+    const { link } = categoriesInfo[category];
+    setModalLink(link); // Устанавливаем ссылку
+    setIsModalOpen(true);
 };
 
   return (
@@ -356,13 +351,12 @@ export const PeriodicTable = () => {
     </div>
 
     {isModalOpen && (
-                <Modal 
-                    isOpen={isModalOpen}
-                    onClose={() => setIsModalOpen(false)}
-                    title={modalTitle}
-                    content={modalContent}
-                />
-            )}
+            <Modal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                link={modalLink} // Передаем ссылку вместо контента
+            />
+        )}
 
     </div>
   );
