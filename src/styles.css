@@ -16,6 +16,7 @@
 
 .periodic-table {
   background-image: url('../thirdback.jpg');
+  /* background-color: aliceblue; */
   display: flex;
   margin-left: -10px;
   margin-bottom: -10px;
